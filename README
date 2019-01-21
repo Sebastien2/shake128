@@ -21,3 +21,7 @@ Répartition des fichiers:
 -------------------------------------------------------------------
 Collisions
 -------------------------------------------------------------------
+./collisions N
+
+Arguments:
+-->N: taille en bytes des collisions recherchées
