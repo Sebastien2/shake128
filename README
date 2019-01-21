@@ -1,2 +1,23 @@
-shake128 hash function implementation + collision detection with Floyd's algo
-Language: C
+Ce programme permet d'executer shake128 sur un fichier.
+
+Commmande: ./shake128 <d> <file>
+Arguments:
+-->d: taille de la sortie en bytes
+-->file: chemin du fichier a signer. Le fichier "text" permet de tester.
+
+Dans shake128.c, on peut choisir modifier c si voulu (ne sert pas pour shake128).
+
+Répartition des fichiers:
+-->affichage.c: permet d'afficher les différents tableaux de char
+-->conversion.c: pemet de changer une liste de char en tableau tri-dimensionnel, et vice versa
+-->keccak.c: fonction utilisation sponge et keccak-p pour avoir une fal=mille de hash (les keccak)
+-->keccakp.c: implemente keccak-p et keccak-f (inutile)
+-->round.c: permet de faire un coup de permutation a l'aide de rho, theta, phi, pi, ki
+-->shake128.c: main function, opens the file, reads the arguments
+-->sponge.c: permet d'obtenir un procede sponge
+-->stepMappings.c: implemente rho, theta, phi, pi ki
+
+
+-------------------------------------------------------------------
+Collisions
+-------------------------------------------------------------------
